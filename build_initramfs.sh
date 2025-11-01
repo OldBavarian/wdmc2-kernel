@@ -110,7 +110,7 @@ wd_set_mac(){
 wd_set_led(){
   led_color=\${1:-green}
   echo none > /sys/class/leds/system-blue/trigger
-  echo ide-disk > /sys/class/leds/system-red/trigger
+  echo none > /sys/class/leds/system-red/trigger
   echo default-on > /sys/class/leds/system-\${led_color}/trigger
 }
 
